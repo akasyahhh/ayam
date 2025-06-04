@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi!</title>
+    <style>
+        html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+        }
+        
+        
+        
+        body {
+            font-family: 'Jetbrains mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #0c0503;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            margin: 10px;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #000000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #080202;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 100px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #c20000;
+        }
+        .movable {
+            position: absolute; 
+            cursor: move; 
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>akas living room</h1>
+        <nav>
+            <ul>
+                <li><a href="/nuthoughts">why</a></li>
+                <li><a href="/master">when</a></li>
+                <li><a href="/step">what</a></li>
+                <li><a href="/tour">who?</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>           Welcome to ⱥҟⱥꞩ living room </h2>
+            <p>fell free to dig all the information u need</p>
+            <div class="image-gallery">
+            <a href="page2.html"> 
+                <img src="image/one.jpg" alt="Image 1"> 
+            </a>
+                <img src="image/two.jpg" alt="Image 2">
+                <img src="image/three.jpg" alt="Image 3">
+                <img src="image/four.jpg" alt="Image 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow ⱥҟⱥꞩ on social media:</p>
+        <ul>
+            <li><a href="https://twitter.com/kendricklamar" target="_blank">spotify</a></li>
+            <li><a href="https://www.instagram.com/kendricklamar/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/kendricklamar" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ/videos" target="_blank">YouTube</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

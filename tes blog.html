@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Picturito (No JS)</title>
+  <style>
+    body {
+      font-family: 'Jetbrains Mono', monospace;
+      margin: 0;
+      background-color: #13007e;
+      color: #ffebeb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .grid a img {
+      width: 100%;
+      height: 150px;              /* Fixed height for preview */
+      object-fit: cover;          /* Crop to fit */
+      border: 3px solid #0b0909;
+      transition: transform 0.3s ease;
+    }
+
+    .grid a img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Overlay Zoom View */
+    .zoom {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .zoom img {
+      max-width: 90vw;
+      max-height: 80vh;
+      border: 4px solid #f1f0bf;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .zoom p {
+      margin-bottom: 20px;
+    }
+
+    .zoom a.close {
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Activate zoom with :target */
+    .zoom:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>picturito</h1>
+
+  <div class="grid">
+    <a href="#img1"><img src="opishiton kids/pictar1.jpg" alt="Image 1" /></a>
+    <a href="#img2"><img src="opishiton kids/pictar2.jpg" alt="Image 2" /></a>
+    <a href="#img3"><img src="opishiton kids/pictar3.jpg" alt="Image 3" /></a>
+    <a href="#img4"><img src="opishiton kids/pictar4.jpg" alt="Image 4" /></a>
+    <a href="#img5"><img src="opishiton kids/pictar5.jpeg" alt="Image 5" /></a>
+    <a href="#img6"><img src="opishiton kids/pictar6.png" alt="Image 1" /></a>
+    <a href="#img7"><img src="opishiton kids/pictar7.jpeg" alt="Image 1" /></a>
+    <a href="#img8"><img src="opishiton kids/pictar8.jpeg" alt="Image 1" /></a>
+    <a href="#img9"><img src="opishiton kids/pictar9.jpeg" alt="Image 1" /></a>
+    <a href="#img10"><img src="opishiton kids/pictar10.jpeg" alt="Image 1" /></a>
+    <a href="#img11"><img src="opishiton kids/pictar11.jpeg" alt="Image 1" /></a>
+    <a href="#img12"><img src="opishiton kids/pictar12.jpeg" alt="Image 1" /></a>
+
+
+
+
+
+
+
+    
+  </div>
+
+  <!-- Zoomed Views (real size shown) -->
+  <div id="img1" class="zoom">
+    <img src="opishiton kids/pictar1.jpg" alt="Zoom 1">
+    <p>i like hindia.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img2" class="zoom">
+    <img src="opishiton kids/pictar2.jpg" alt="Zoom 2">
+    <p>danilla was so pretty.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img3" class="zoom">
+    <img src="opishiton kids/pictar3.jpg" alt="Zoom 3">
+    <p>my mom and her siblings.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img4" class="zoom">
+    <img src="opishiton kids/pictar4.jpg" alt="Zoom 4">
+    <p>one of my favourite art i made.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img5" class="zoom">
+    <img src="opishiton kids/pictar5.jpeg" alt="Zoom 5">
+    <p>using crocs on hospital.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+  
+  <div id="img6" class="zoom">
+    <img src="opishiton kids/pictar6.png" alt="Zoom 5">
+    <p>its just a beach.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img7" class="zoom">
+    <img src="opishiton kids/pictar7.jpeg" alt="Zoom 5">
+    <p>messy desk.</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img8" class="zoom">
+    <img src="opishiton kids/pictar8.jpeg" alt="Zoom 5">
+    <p>late night assignment</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img9" class="zoom">
+    <img src="opishiton kids/pictar9.jpeg" alt="Zoom 5">
+    <p>we are so proud to ourself</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img10" class="zoom">
+    <img src="opishiton kids/pictar10.jpeg" alt="Zoom 5">
+    <p>room is so damp</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img11" class="zoom">
+    <img src="opishiton kids/pictar11.jpeg" alt="Zoom 5">
+    <p>tas tas tatas tas</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <div id="img12" class="zoom">
+    <img src="opishiton kids/pictar12.jpeg" alt="Zoom 5">
+    <p>winning dress to impress</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+
+</body>
+</html>

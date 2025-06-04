@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Simpel Modern</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #d9e2c3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      max-width: 900px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .form-box {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .form-box h2 {
+      margin-bottom: 3px;
+      color: #333;
+    }
+
+    .form-box input[type="email"],
+    .form-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .form-box .options {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .form-box input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #4105b9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form-box input[type="submit"]:hover {
+      background-color: #23045d;
+    }
+
+    .image-box {
+      flex: 1;
+      background-color: #f9f9ff;
+      background-image: url('https://bentan.co.id/wp-content/uploads/2024/09/fufufafa.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Selamat Datang </h2>
+      <h4> silahkan login terlebih dahulu</h4>
+      <form action="#">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <div class="options">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    <div class="image-box"></div>
+  </div>
+</body>
+</html>
